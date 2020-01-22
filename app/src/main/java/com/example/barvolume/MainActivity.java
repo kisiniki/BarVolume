@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        AppCenter.start(getApplication(), "3fd2b99a-4d7d-4d4f-b038-a820ead528b4", Analytics.class, Crashes.class);
 
         edtWidth = findViewById(R.id.edt_width);
         edtHeight= findViewById(R.id.edt_height);
